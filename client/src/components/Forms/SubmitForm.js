@@ -42,16 +42,6 @@ class SubmitForm extends Component {
 		get('/apiV2/queryallcars')
 			.then(value => console.log(value))
 			.catch(err => console.log(err));
-
-		//const a = fs.writeFileSync('/home/thanhminhhodac/Desktop/Desktop/test.json', content, err => {
-		//   if (err) {
-		//     console.error('ERROR1: ', err);
-		//   }
-		//   else {
-		//     console.log("file written successfully")
-		//   }
-		//   console.log(a)
-		// file written successfully
 	}
 
 	render() {
