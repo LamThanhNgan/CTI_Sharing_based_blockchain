@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
-import { get } from '../../services/request';
+import { post } from '../../services/request';
 
 const styles = theme => ({
 	container: {
@@ -37,11 +37,13 @@ class SubmitForm extends Component {
 		let file = document.getElementById('submit-file').files[0];
 		//console.log(file.text())
 
-		const content = { minh: 'Hello testing' };
+		( async () =>{ const content = await file.text();
+			// console.log(content)
 
-		get('/apiV2/queryallcars')
+		post('/apiV2/submit/', JSON.parse(content))
 			.then(value => console.log(value))
 			.catch(err => console.log(err));
+		})()
 	}
 
 	render() {

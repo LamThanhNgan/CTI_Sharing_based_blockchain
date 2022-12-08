@@ -39,7 +39,7 @@
 		"Org1MSP": {
 			"mspid": "Org1MSP",
 			"adminPrivateKey": {
-				"path": "/home/ubuntu/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/b6e05763023626ea45f560fa5740dcac2ed3ade54b11eaab3e94a5e8ff41800e_sk"
+				"path": "/home/ubuntu/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/User1@org1.example.com/msp/keystore/ca75d5bd36fc6a84c5a7bcb1b6a70b41bb60d2c5b322af2afd825670e00b5ad5_sk"
 			},
 			"peers": ["peer0.org1.example.com"],
 			"signedCert": {

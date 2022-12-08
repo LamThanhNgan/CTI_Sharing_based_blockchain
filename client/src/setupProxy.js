@@ -8,7 +8,7 @@ module.exports = app => {
 		})
 	);
 	app.use(
-		createProxyMiddleware('/api/queryallcars', {
+		createProxyMiddleware('/apiV2/submit/', {
 			target: 'http://localhost:4444/',
 			secure: false
 		})
